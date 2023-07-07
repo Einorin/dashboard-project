@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1.5fr 5fr ;
+}
+
+.sidebar{
+    grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 2fr 8fr 3fr;
+}
+.logo{
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+    align-items: center;
+    font-size: 2rem;
+    padding: 12px;
+    
+}
+.phanda{
+    margin-right: 12px;
+}
+.upper{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper>li{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 1/2;
+}
+.header{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.header-head{
+    display: grid;
+    grid-template-columns: .2fr 1fr .2fr .2fr .2fr .2fr;
+    align-items: center;
+    padding-right: 12px;
+}
+.search{
+    width: 1fr;
+    border-radius: 12px;
+}
+.search-icon{
+    justify-self:end;
+    padding-right: 12px;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: red;
+    justify-self: center;
+  }
+  .bell{
+    justify-self: end;
+  }
+
+  .name{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+.header-foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.foot-left{
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.circle2 {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border-radius: 50%;
+    background-color: red;
+    justify-self: center;
+    grid-row: 1/3;
+    align-self: center;
+  }
+  .name2{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .hi{
+    align-self: flex-end;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+.foot-right{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.btn{
+    border-radius: 20px;
+    background-color: blue;
+    text-align: center;
+    padding: 6px;
+}
+.main-content{
+    display: grid;
+    margin: 12px 12px 24px 12px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.projects{
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: .1fr 1fr;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem .5rem;
+}
+.project>div{
+    padding: 24px;
+    display: grid;
+    grid-template-rows: .2fr 1fr .2fr;
+    border-left: solid 12px orange;
+}
+.icons{
+    justify-self: end;
+}
+.icons>img{
+    margin: 8px;
+}
+.announcements{
+    display: grid;
+    grid-template-rows: .1fr 1.3fr;
+}
+.announce-div{
+    display: grid;
+    
+}
+
+
+
+
+
+
+
+
+div,ul{
+    border: solid green;
+}
